@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'typo.ui'
-#
+#   pyuic5 typo.ui -o typo_ui.py
 # Created by: PyQt5 UI code generator 5.15.4
 #
 # WARNING: Any manual changes made to this file will be lost when pyuic5 is
@@ -15,7 +15,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(951, 280)
-        icon = QtGui.QIcon.fromTheme("ibus-keyboard") #change the name of icon !!!!!!
+        icon = QtGui.QIcon.fromTheme("ibus-keyboard") #change the icon name !!!!!!
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")

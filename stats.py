@@ -1,6 +1,6 @@
 #!/bin/python
 """
-draws and saves the graph of your typing exercises
+draws and saves a graph of your typing exercises
 """
 import time
 import pandas as pd
@@ -45,14 +45,12 @@ if df.shape[0]>20:
 	last10 = round(df.iloc[-10:, 2].mean(), ndigits=1)
 	title+= f'. Average speed of last 10 lines: {last10} wpm'
 
-names = ['Smoothed WpM', 'Words per minute', 'Smoothed typos', 'Typos percentage']
+names = ['Words per minute', 'Smoothed WpM', 'Typos percentage', 'Smoothed typos']
 colors = ['PaleGreen', 'MediumSeaGreen', 'LightCoral', 'FireBrick']
 p = df.plot(x='DateTime', y=names, fontsize=6, figsize=(19,8), title=title,
-	        grid=True, colormap=lc(colors), linewidth=3.0)
+	        grid=True, colormap=lc(colors), linewidth=2.0)
 plt.xticks(rotation=45)
 plt.show()
 
 fig = p.get_figure()
 fig.savefig("typing_stats")
-
-
