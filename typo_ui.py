@@ -16,7 +16,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setEnabled(True)
         MainWindow.resize(951, 349)
-        icon = QtGui.QIcon.fromTheme("ibus-keyboard")
+        icon = QtGui.QIcon.fromTheme("keyboard")
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
